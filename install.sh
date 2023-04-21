@@ -10,6 +10,7 @@ sudo apt install -y neovim
 # NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # set user shell
-sudo chsh -s /bin/zsh $(whoami)  # this is optional
+sudo sed -i.bak "s%DSHELL=.*%DSHELL=$(which zsh)%" /etc/adduser.conf
+sudo chsh -s /bin/zsh $(whoami)
 
 sudo apt update -y && upgrade -y && echo "system restarting!" && sudo reboot
