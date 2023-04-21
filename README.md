@@ -12,7 +12,7 @@ ubuntu_sudo/install.sh
 
 Or execute following steps one by one.
 
-# Install shell and basic utilities
+## Install shell and basic utilities
 ```sh
 sudo apt install -y zsh unzip ruby openssh-server curl cifs-utils
 sudo apt install -y gcc make pkg-config libglvnd-dev  # for NVIDIA driver
