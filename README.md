@@ -5,7 +5,10 @@ Download repository:
 ```sh
 git clone https://github.com/MasaYan24/ubuntu_sudo.git
 ```
-Then execute `ubuntu_sudo/install.sh`
+Then execute
+```sh
+ubuntu_sudo/install.sh
+```
 
 Or execute following steps one by one.
 
