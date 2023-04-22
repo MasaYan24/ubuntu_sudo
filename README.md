@@ -1,13 +1,10 @@
 # Ubuntu settings
 
-# Execution
-Download repository:
+Execute following.
 ```sh
-git clone https://github.com/MasaYan24/ubuntu_sudo.git
-```
-Then execute
-```sh
-ubuntu_sudo/install.sh
+install_dir=$(mktemp -d); echo install_dir: $install_dir
+git clone https://github.com/MasaYan24/ubuntu_sudo.git $install_dir/ubuntu_sudo
+$install_dir/ubuntu_sudo/install.sh
 ```
 
 Or execute following steps one by one.
