@@ -7,12 +7,13 @@ sudo apt install -y tmux
 
 # install developping tools
 sudo apt install -y make g++ ruby
-sudo apt install -y neovim
 sudo apt install -y imagemagick
 git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
     && cd /tmp/TIV/src/main/cpp \
     && make \
     && sudo make install
+sudo curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage /usr/bin/nvim
+sudo chmod a+x /usr/bin/nvim
 
 # install homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
