@@ -17,5 +17,5 @@ sudo apt install -y tmux
 sudo apt install -y neovim
 sudo chsh -s /bin/zsh $(whoami)  # this is optional
 
-sudo apt update -y && upgrade -y && echo "system restarting!" && sudo reboot
+sudo apt update -y & sudo apt upgrade -y && echo "system restarting!" && sudo reboot
 ```
