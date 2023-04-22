@@ -17,6 +17,9 @@ git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
 # install homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# install starship
+brew install starship
+
 # set user shell
 sudo sed -i.bak "s%DSHELL=.*%DSHELL=$(which zsh)%" /etc/adduser.conf
 sudo chsh -s /bin/zsh $(whoami)
