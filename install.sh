@@ -12,7 +12,7 @@ git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
     && cd /tmp/TIV/src/main/cpp \
     && make \
     && sudo make install
-sudo curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage /usr/bin/nvim
+sudo wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -O /usr/bin/nvim
 sudo chmod a+x /usr/bin/nvim
 
 # install homebrew
