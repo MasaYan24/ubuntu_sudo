@@ -19,7 +19,7 @@ sudo chmod a+x /usr/bin/nvim
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install starship
-brew install starship
+/home/linuxbrew/.linuxbrew/bin/brew install starship
 
 # set user shell
 sudo sed -i.bak "s%DSHELL=.*%DSHELL=$(which zsh)%" /etc/adduser.conf
