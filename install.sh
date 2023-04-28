@@ -6,7 +6,7 @@ sudo apt install -y gcc make pkg-config libglvnd-dev  # for NVIDIA driver
 sudo apt install -y tmux
 
 # install developping tools
-sudo apt install -y make g++ ruby libfuse2
+sudo apt install -y make g++ direnv ruby libfuse2
 sudo apt install -y imagemagick
 git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
     && cd /tmp/TIV/src/main/cpp \
