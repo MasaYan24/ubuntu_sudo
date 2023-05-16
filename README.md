@@ -10,6 +10,22 @@ sh $install_dir/ubuntu_sudo/install.sh
 
 Or execute following steps in the Manual Installation section.
 
+If your computer is under a proxy, execute following before the installation.
+```sh
+# modify following
+http_proxy="http://your/proxy/IP:PortNumber"
+https_proxy="http://your/proxy/IP:PortNumber"
+```
+```sh
+# apt configuration
+sudo echo "Acquire::http::proxy \"$http_proxy\";" >> /etc/apt/apt.conf
+sudo echo "Acquire::https::proxy \"$http_proxy\";" >> /etc/apt/apt.conf
+
+# wget configuration
+sudo echo "http_proxy = $http_proxy/" >> /etc/wgetrc
+sudo echo "https_proxy = $https_proxy/" >> /etc/wgetrc
+```
+
 ## Summary
 
 This installation includes following subjects under assuming z-shell.
