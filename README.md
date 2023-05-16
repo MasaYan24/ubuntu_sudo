@@ -12,10 +12,11 @@ Or execute following steps in the Manual Installation section.
 
 If your computer is under a proxy, execute following before the installation.
 ```sh
-# modify following
+# modify following and execute.
 http_proxy="http://your/proxy/IP:PortNumber"
 https_proxy="http://your/proxy/IP:PortNumber"
 ```
+
 ```sh
 # apt configuration
 sudo echo "Acquire::http::proxy \"$http_proxy\";" >> /etc/apt/apt.conf
