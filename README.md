@@ -28,6 +28,7 @@ sudo echo "http_proxy = $http_proxy/" >> /etc/wgetrc
 sudo echo "https_proxy = $https_proxy/" >> /etc/wgetrc
 ```
 
+cf) [Ubuntu の Proxy 設定備忘録](https://qiita.com/daichi-ishida/items/b77c151067427806ede5)
 ## Summary
 
 This installation includes following subjects under assuming z-shell.
