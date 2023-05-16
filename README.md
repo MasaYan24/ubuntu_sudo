@@ -10,6 +10,7 @@ sh $install_dir/ubuntu_sudo/install.sh
 
 Or execute following steps in the Manual Installation section.
 
+### Note
 If your computer is under a proxy, execute following before the installation.
 ```sh
 # modify following and execute.
