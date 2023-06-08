@@ -11,6 +11,8 @@ sh $install_dir/ubuntu_sudo/install.sh
 Or execute following steps in the Manual Installation section.
 
 ### Note
+
+#### proxy
 If your computer is under a proxy, execute following before the installation.
 ```sh
 # modify following and execute.
@@ -29,6 +31,17 @@ sudo echo "https_proxy = $https_proxy/" >> /etc/wgetrc
 ```
 
 cf) [Ubuntu の Proxy 設定備忘録](https://qiita.com/daichi-ishida/items/b77c151067427806ede5)
+
+#### nvidia-driver
+Execute following for install nvidia's GPU driver.
+```sh
+sudo apt install ubuntu-drivers-common
+sudo ubuntu-drivers devices
+# check the recommended one and install
+sudo apt install <recommended driver>
+```
+check if `nvidia-smi` works.
+
 ## Summary
 
 This installation includes following subjects under assuming z-shell.
