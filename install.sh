@@ -8,10 +8,10 @@ sudo apt install -y tmux
 # install developping tools
 sudo apt install -y make g++ direnv ruby libfuse2
 sudo apt install -y imagemagick
-git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
-    && cd /tmp/TIV/src/main/cpp \
-    && make \
-    && sudo make install
+# git clone https://github.com/stefanhaustein/TerminalImageViewer.git /tmp/TIV \
+#     && cd /tmp/TIV/src/main/cpp \
+#     && make \
+#     && sudo make install
 sudo wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -O /usr/bin/nvim
 sudo chmod a+x /usr/bin/nvim
 
