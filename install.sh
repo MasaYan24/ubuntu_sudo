@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install shell and basic utilities
-sudo apt install -y zsh build-essential procps file git unzip openssh-server curl cifs-utils
+sudo apt install -y zsh build-essential procps file git unzip openssh-server curl cifs-utils keychain
 sudo apt install -y gcc make pkg-config libglvnd-dev  # for NVIDIA driver
 sudo apt install -y tmux
 
